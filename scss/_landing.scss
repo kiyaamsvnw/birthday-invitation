@@ -1,0 +1,84 @@
+.background {
+  @include flex-center;
+  height: 100vh;
+
+  background-image : radial-gradient(
+    circle at 50% 135%,
+    $grad1 0%,
+    $grad2 25%,
+    $grad3 45%,
+    $grad4 65%,
+    $grad5 85%,
+    $grad6 100%
+  );
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/noise.jpg');
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+
+    svg {
+      height: 60px;
+    }
+
+    .message {
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-align: center;
+      color: $accent1;
+
+      padding: 0;
+      margin: 0;
+    }
+
+    .invite {
+      @include flex-center;
+
+      h1 {
+        font-family: 'Cario', 'Times New Roman', Times, serif;
+        font-weight: normal;
+        font-size: 120px;
+        text-align: center;
+        letter-spacing: 2px;
+        color: $accent1;
+
+        padding: 0;
+        margin: 0;
+
+        sup {
+          font-size: 65px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 80px;
+
+          sup {
+            font-size: 45px;
+          }
+        }
+      }
+
+      @media (max-width: 345px) {
+        h1 {
+          font-size: 60px;
+
+          sup {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+}

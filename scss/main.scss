@@ -1,0 +1,15 @@
+@import 'config';
+@import 'header';
+@import 'landing';
+@import 'information';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $grad5;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}

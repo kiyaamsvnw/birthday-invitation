@@ -1,0 +1,106 @@
+.information {
+  @include flex-center;
+  height: 100vh;
+
+  background-image : radial-gradient(
+    circle at 50% -28%,
+    $grad1 0%,
+    $grad2 25%,
+    $grad3 45%,
+    $grad4 65%,
+    $grad5 85%,
+    $grad6 100%
+  );
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../img/noise.jpg');
+    background-size: cover;
+    opacity: 0.05;
+    pointer-events: none;
+  }
+
+  .text2 {
+    @include flex-center;
+    flex-direction: column;
+
+    color: $accent1;
+
+    .date {
+      font-family: 'Cario', 'Times New Roman', Times, serif;
+      font-weight: normal;
+      font-size: 80px;
+      text-align: center;
+      letter-spacing: 2px;
+
+      sup {
+        font-size: 45px;
+      }
+    }
+
+    .venue, .rsvp {
+      text-align: center;
+    }
+
+    .venue, .rsvp, .time {
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+
+    .time {
+      margin: 40px 0 0 0;
+    }
+
+    .rsvp {
+      margin: 80px 0 0 0;
+
+      sup {
+        font-size: 10px;
+      }
+    }
+
+    svg {
+      height: 60px;
+    }
+
+    .top {
+      height: 30px;
+    }
+
+    .bottom {
+      margin: 20px 0 0 0;
+    }
+
+    .note {
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-style: italic;
+
+      margin: 20px 0 0 0;
+    }
+
+    @media (max-width: 500px) {
+        .date {
+          font-size: 60px;
+
+          sup {
+            font-size: 35px;
+          }
+        }
+      }
+
+      @media (max-width: 345px) {
+        .date {
+          font-size: 40px;
+
+          sup {
+            font-size: 25px;
+          }
+        }
+      }
+  }
+}

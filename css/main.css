@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Cario";
+  src: url("../fonts/Cario.woff2") format("woff2"), url("../fonts/Cario.woff format") format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+header .header-left {
+  height: 60px;
+}
+header .header-left svg {
+  height: 100%;
+}
+header .header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-grow: 1;
+}
+header .header-center .line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+header .header-center .line::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  flex-grow: 1;
+  background-color: #ffe9ec;
+  margin: 0 10px;
+}
+header .header-right {
+  height: 60px;
+}
+header .header-right svg {
+  height: 100%;
+}
+
+.background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: radial-gradient(circle at 50% 135%, #870e24 0%, #660f1e 25%, #500f19 45%, #330c11 65%, #210c0b 85%, #100c08 100%);
+}
+.background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/noise.jpg");
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+}
+.background .text {
+  display: flex;
+  flex-direction: column;
+}
+.background .text svg {
+  height: 60px;
+}
+.background .text .message {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #ffe9ec;
+  padding: 0;
+  margin: 0;
+}
+.background .text .invite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background .text .invite h1 {
+  font-family: "Cario", "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 120px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ffe9ec;
+  padding: 0;
+  margin: 0;
+}
+.background .text .invite h1 sup {
+  font-size: 65px;
+}
+@media (max-width: 500px) {
+  .background .text .invite h1 {
+    font-size: 80px;
+  }
+  .background .text .invite h1 sup {
+    font-size: 45px;
+  }
+}
+@media (max-width: 345px) {
+  .background .text .invite h1 {
+    font-size: 60px;
+  }
+  .background .text .invite h1 sup {
+    font-size: 25px;
+  }
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: radial-gradient(circle at 50% -28%, #870e24 0%, #660f1e 25%, #500f19 45%, #330c11 65%, #210c0b 85%, #100c08 100%);
+  position: relative;
+}
+.information::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/noise.jpg");
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+}
+.information .text2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffe9ec;
+}
+.information .text2 .date {
+  font-family: "Cario", "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.information .text2 .date sup {
+  font-size: 45px;
+}
+.information .text2 .venue, .information .text2 .rsvp {
+  text-align: center;
+}
+.information .text2 .venue, .information .text2 .rsvp, .information .text2 .time {
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.information .text2 .time {
+  margin: 40px 0 0 0;
+}
+.information .text2 .rsvp {
+  margin: 80px 0 0 0;
+}
+.information .text2 .rsvp sup {
+  font-size: 10px;
+}
+.information .text2 svg {
+  height: 60px;
+}
+.information .text2 .top {
+  height: 30px;
+}
+.information .text2 .bottom {
+  margin: 20px 0 0 0;
+}
+.information .text2 .note {
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-style: italic;
+  margin: 20px 0 0 0;
+}
+@media (max-width: 500px) {
+  .information .text2 .date {
+    font-size: 60px;
+  }
+  .information .text2 .date sup {
+    font-size: 35px;
+  }
+}
+@media (max-width: 345px) {
+  .information .text2 .date {
+    font-size: 40px;
+  }
+  .information .text2 .date sup {
+    font-size: 25px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #210c0b;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}/*# sourceMappingURL=main.css.map */

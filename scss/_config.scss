@@ -1,0 +1,37 @@
+// variables 
+
+$main1: #66021f;
+$accent1: #ffe9ec;
+
+// gradient
+
+$grad1: #870e24;
+$grad2: #660f1e;
+$grad3: #500f19;
+$grad4: #330c11;
+$grad5: #210c0b;
+$grad6: #100c08;
+
+// mixins 
+
+@mixin flex-center {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+};
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// fonts 
+
+@font-face {
+  font-family: 'Cario';
+  src: url('../fonts/Cario.woff2') format('woff2'),
+       url('../fonts/Cario.woff format') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
